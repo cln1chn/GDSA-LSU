@@ -26,11 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
      --------------------------------------------------------------- */
   var pastCompetitions = [
     {
-      month: 'September 2026',
-      title: 'Field Notes',
-      prompt: 'Design a fictional poster series for a campus event called "Field Notes," a student research symposium. Submit a single-page PDF with your logo, your color palette, and one mock-up or application in use.',
-      deadline: 'Was due: September 4.',
-      formLink: 'https://forms.gle/REPLACE_WITH_FORM_LINK'
+      month: 'August 2026',
+      title: 'Work In Progress',
+      prompt: 'Future projects will go here!',
+      deadline: 'Was due: Never?',
     }
     // {
     //   month: 'August 2026',
