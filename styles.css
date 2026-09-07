@@ -150,7 +150,7 @@ input:focus-visible,
 }
 
 section {
-  padding-block: var(--sp-8);
+  padding-block: var(--sp-4);
 }
 
 .eyebrow-meta {
@@ -218,16 +218,17 @@ section {
   color: var(--ink);
   padding: 0.5em 0.75em;
   border: var(--border-w) solid transparent;
+  border-radius: 10px;
 }
 
 .site-nav a:hover {
-  border-color: var(--ink);
+  border-color: var(--red);
 }
 
 .site-nav a[aria-current="page"] {
   background: var(--red);
   color: var(--white);
-  border-color: var(--ink);
+  border-color: transparent;
 }
 
 @media (max-width: 780px) {
@@ -323,6 +324,15 @@ section {
   margin-bottom: var(--sp-4);
 }
 
+.section-head--tight {
+  margin-bottom: 0.1rem;
+}
+
+.section-head h1,
+.section-head h2 {
+  margin-bottom: 0;
+}
+
 .section-head p {
   color: var(--text-muted);
 }
@@ -347,6 +357,16 @@ section {
 .btn:hover {
   background: var(--white);
   color: var(--ink);
+}
+
+.btn-accent {
+  background: var(--blue);
+  color: var(--lime);
+  border: none;
+}
+.btn-accent:hover {
+  background: var(--lime);
+  color: var(--blue);
 }
 
 .btn-outline {
@@ -433,6 +453,7 @@ section {
 }
 
 .officer-email a {
+  color: var(--red);
   font-size: var(--step--1);
   word-break: break-word;
 }
@@ -466,7 +487,7 @@ section {
 .rules-block li:last-child { margin-bottom: 0; }
 
 .current-prompt {
-  border: var(--border-w) solid var(--ink);
+  border: transparent;
   padding: var(--sp-4);
   background: var(--red);
   color: var(--lavender);
@@ -569,6 +590,15 @@ section {
   margin-bottom: var(--sp-6);
 }
 
+.dues-note p,
+.current-prompt p,
+.about-copy p,
+.carousel-panel p,
+.rules-block p,
+.section-head p {
+  max-width: none;
+}
+
 .pay-buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -576,7 +606,7 @@ section {
 }
 
 .pay-buttons a {
-  border: var(--border-w) solid var(--ink);
+  border: transparent;
   text-decoration: none;
   font-family: var(--font-body);
   font-weight: 700;
@@ -584,10 +614,13 @@ section {
   padding: var(--sp-4) var(--sp-2);
   text-align: center;
 }
-.pay-buttons a:nth-child(1) { background: var(--blue); color: var(--pink); }
+.pay-buttons a:nth-child(1) { background: var(--blue); color: var(--lime); }
 .pay-buttons a:nth-child(2) { background: var(--lime); color: var(--blue); }
-.pay-buttons a:nth-child(3) { background: var(--ink); color: var(--lime); }
-.pay-buttons a:hover { outline: var(--border-w) solid var(--ink); outline-offset: -6px; }
+.pay-buttons a:nth-child(3) { background: var(--blue); color: var(--lime); }
+
+.pay-buttons a:nth-child(1):hover { background: var(--red); color: var(--lime); }
+.pay-buttons a:nth-child(2):hover { background: var(--red); color: var(--lime); }
+.pay-buttons a:nth-child(3):hover { background: var(--red); color: var(--lime); }
 
 @media (max-width: 600px) {
   .pay-buttons { grid-template-columns: 1fr; }
