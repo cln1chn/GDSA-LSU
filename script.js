@@ -72,36 +72,4 @@ document.addEventListener('DOMContentLoaded', function () {
     render();
   }
 
-  /* ---------------------------------------------------------------
-     Photos — lightbox
-     --------------------------------------------------------------- */
-  var lightbox = document.getElementById('lightbox');
-  if (lightbox) {
-    var lightboxImg = document.getElementById('lightbox-img');
-    var lightboxCaption = document.getElementById('lightbox-caption');
-    var closeBtn = document.getElementById('lightbox-close');
-    var openers = document.querySelectorAll('#photo-grid button');
-
-    openers.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var full = btn.getAttribute('data-full');
-        var caption = btn.getAttribute('data-caption') || '';
-        if (full) {
-          lightboxImg.src = full;
-          lightboxImg.alt = caption;
-          lightboxImg.style.display = '';
-        } else {
-          // No real image wired up yet for this placeholder tile.
-          lightboxImg.style.display = 'none';
-        }
-        lightboxCaption.textContent = caption;
-        lightbox.showModal();
-      });
-    });
-
-    closeBtn.addEventListener('click', function () {
-      lightbox.close();
-    });
-  }
-
 });
