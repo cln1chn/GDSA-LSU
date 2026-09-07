@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Competition | GDSA — LSU</title>
+<meta name="description" content="GDSA's monthly design brief competition — current prompt, deadline, and submission link.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">
+      <img src="assets/GDSA_Badge.png" alt="" width="32" height="32">
+      GDSA
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="competition.html" aria-current="page">Design Competition</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="financials.html">Financials</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h1>Design competition</h1>
+        <p>Every month, all members get the same brief. Anyone can enter — no experience required.</p>
+      </div>
+
+      <div class="rules-block">
+        <h2>How it works</h2>
+        <ul>
+          <li>A new prompt is posted at the start of each month.</li>
+          <li>Submit one single-page PDF containing your logo, your color palette, and one mock-up or application of the logo in use.</li>
+          <li>Submissions are due before the next general meeting, using the Google Form linked under that month's prompt.</li>
+        </ul>
+      </div>
+
+      <!-- CURRENT PROMPT
+           To post next month's brief, edit the text below directly. -->
+      <div class="current-prompt">
+        <p class="eyebrow-meta">Current prompt · October 2026</p>
+        <h2>Pixel Playground</h2>
+        <p>Design a logo for Pixel Playground, a fictional arcade. Your single-page PDF should include your logo, your color palette, and one mock-up or application of the logo in use (a sign, a cabinet, a t-shirt — your call).</p>
+        <p class="deadline">Due before our next meeting: October 2.</p>
+        <p><a href="https://forms.gle/REPLACE_WITH_FORM_LINK" target="_blank" rel="noopener">Submit your entry (Google Form) →</a></p>
+      </div>
+
+      <div class="past-heading">
+        <h2>Past prompts</h2>
+      </div>
+
+      <!--
+        PAST COMPETITIONS CAROUSEL
+        Data lives in script.js (the `pastCompetitions` array).
+        When a month wraps up, move its details from "current prompt"
+        above into that array so it appears here automatically.
+        The first entry is rendered here for anyone without JavaScript.
+      -->
+      <div class="carousel" id="past-carousel">
+        <div class="carousel-controls">
+          <button type="button" id="carousel-prev" aria-label="Show previous past prompt">&larr;</button>
+          <span class="carousel-label" id="carousel-label">September 2026</span>
+          <button type="button" id="carousel-next" aria-label="Show next past prompt">&rarr;</button>
+        </div>
+        <div class="carousel-panel" id="carousel-panel" aria-live="polite">
+          <h3 id="carousel-title">Field Notes</h3>
+          <p id="carousel-prompt">Design a fictional poster series for a campus event called "Field Notes," a student research symposium. Submit a single-page PDF with your logo, your color palette, and one mock-up or application in use.</p>
+          <p class="deadline" id="carousel-deadline">Was due: September 4.</p>
+          <p><a href="https://forms.gle/REPLACE_WITH_FORM_LINK" id="carousel-link" target="_blank" rel="noopener">View that month's submission form →</a></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>GDSA · Louisiana State University</p>
+    <p>gdsa.lsu@gmail.com</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

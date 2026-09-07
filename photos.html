@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photos | GDSA — LSU</title>
+<meta name="description" content="Photos from GDSA meetings, workshops, and events at LSU.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">
+      <img src="assets/GDSA_Badge.png" alt="" width="32" height="32">
+      GDSA
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="competition.html">Design Competition</a></li>
+        <li><a href="photos.html" aria-current="page">Photos</a></li>
+        <li><a href="financials.html">Financials</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h1>Photos</h1>
+        <p>Moments from meetings, workshops, and events. Select any photo to view it larger.</p>
+      </div>
+
+      <!--
+        PHOTO GALLERY
+        Each button below is one photo slot. To add a real photo, replace
+        the placeholder <span> with an <img src="assets/photos/your-file.jpg"
+        alt="Description of the photo">, and update the matching button's
+        data-full / data-caption attributes used by the lightbox.
+      -->
+      <div class="photo-grid" id="photo-grid">
+
+        <button type="button" data-full="" data-caption="General meeting, fall 2026">
+          <span class="photo-placeholder">Photo placeholder<br>General meeting</span>
+        </button>
+
+        <button type="button" data-full="" data-caption="Portfolio workshop">
+          <span class="photo-placeholder">Photo placeholder<br>Portfolio workshop</span>
+        </button>
+
+        <button type="button" data-full="" data-caption="Guest speaker event">
+          <span class="photo-placeholder">Photo placeholder<br>Guest speaker</span>
+        </button>
+
+        <button type="button" data-full="" data-caption="Design competition awards">
+          <span class="photo-placeholder">Photo placeholder<br>Competition awards</span>
+        </button>
+
+        <button type="button" data-full="" data-caption="Studio critique night">
+          <span class="photo-placeholder">Photo placeholder<br>Critique night</span>
+        </button>
+
+        <button type="button" data-full="" data-caption="End of semester social">
+          <span class="photo-placeholder">Photo placeholder<br>End of semester</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="lightbox" aria-label="Photo viewer">
+  <button type="button" class="lightbox-close btn btn-outline" id="lightbox-close">Close</button>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption"></p>
+</dialog>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>GDSA · Louisiana State University</p>
+    <p>gdsa.lsu@gmail.com</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

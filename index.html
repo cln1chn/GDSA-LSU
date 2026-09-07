@@ -1,47 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>portfolio | home</title>
-  <meta name="description" content="interactive portfolio by graphic designer cole chen">
-
-  <link rel="icon" href="img/Web Design P4 Favicon.png">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
-
-  <meta name="theme-color" content="#f4f1ec">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GDSA — Graphic Design Student Association | LSU</title>
+<meta name="description" content="Home of the Graphic Design Student Association at LSU — club events, officers, the monthly design competition, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<body class="home-page">
-  <header class="site-logo">
-    <a href="index.html">
-      <img src="img/C-LOGOorngE.png" alt="cole chen logo">
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">
+      <img src="assets/GDSA_Badge.png" alt="" width="32" height="32">
+      GDSA
     </a>
-  </header>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="competition.html">Design Competition</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="financials.html">Financials</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <nav class="edge-nav">
-    <a class="nav-home active" href="index.html">home</a>
-    <a class="nav-projects" href="projects.html">projects</a>
-    <a class="nav-about" href="about.html">about</a>
-    <a class="nav-contact" href="contact.html">contact</a>
-  </nav>
+<main id="main">
 
-  <main class="home-layout">
-    <section class="home-text">
-      <p class="eyebrow">interactive digital portfolio</p>
-      <h1>COLE CHEN.</h1>
-      <p>clarity is rarely loud, but it is always decisive</p>
-    </section>
-  </main>
+  <section class="hero">
+    <div class="wrap">
+      <img class="hero-badge" src="assets/GDSA_Badge.png" alt="GDSA logo">
+      <h1>GDSA</h1>
+      <p class="tagline">The Graphic Design Student Association at LSU.</p>
+    </div>
+  </section>
 
-  <a class="linkedin-link" href="https://www.linkedin.com/in/colin-chen-911a48269/" target="_blank" rel="noopener">
-    <img src="img/LinkedIn Portfolio Site Icon.png" alt="linkedin">
-  </a>
+  <div class="brand-grid" role="presentation">
+    <div class="bg-lavender"><p>Graphic Design Student Association.</p></div>
+    <div class="bg-red"><p>Graphic Design Student Association.</p></div>
+    <div class="bg-blue"><p>Graphic Design Student Association.</p></div>
+    <div class="bg-lime"><p>Graphic Design Student Association.</p></div>
+    <div class="bg-pink"><p>Graphic Design Student Association.</p></div>
+    <div class="bg-ink"><p>Graphic Design Student Association.</p></div>
+  </div>
 
-  <script src="js/script.js"></script>
+  <section aria-labelledby="calendar-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="calendar-heading">Upcoming events</h2>
+        <p>All GDSA meetings, workshops, and deadlines, in one place. Add it to your own calendar so nothing slips by.</p>
+      </div>
+      <div class="calendar-frame-wrap">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=gdsa.lsu%40gmail.com&ctz=America%2FChicago"
+          title="GDSA shared events calendar"
+          style="border: 0"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+      <p class="calendar-fallback">
+        Calendar not loading? <a href="https://calendar.google.com/calendar/embed?src=gdsa.lsu%40gmail.com&ctz=America%2FChicago">Open it directly in Google Calendar</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>GDSA · Louisiana State University</p>
+    <p>gdsa.lsu@gmail.com</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,55 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>portfolio | about</title>
-  <meta name="description" content="interactive portfolio featuring designer cole chen and his summary">
-
-  <link rel="icon" href="img/Web Design P4 Favicon.png">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
-
-  <meta name="theme-color" content="#f4f1ec">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | GDSA — LSU</title>
+<meta name="description" content="About the Graphic Design Student Association at LSU, and where to find us on social media.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<body class="about-page">
-  <header class="site-logo">
-    <a href="index.html">
-      <img src="img/C-LOGOorngE.png" alt="cole chen logo">
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">
+      <img src="assets/GDSA_Badge.png" alt="" width="32" height="32">
+      GDSA
     </a>
-  </header>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="competition.html">Design Competition</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="financials.html">Financials</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <nav class="edge-nav">
-    <a class="nav-home" href="index.html">home</a>
-    <a class="nav-projects" href="projects.html">projects</a>
-    <a class="nav-about active" href="about.html">about</a>
-    <a class="nav-contact" href="contact.html">contact</a>
-  </nav>
-
-  <main class="content-layout">
-    <section class="about-layout">
-      <div class="about-img">
-        <img src="img/portrait1.jpg" alt="cole chen portrait">
+<main id="main">
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h1>About GDSA</h1>
       </div>
 
       <div class="about-copy">
-        <p class="eyebrow">about</p>
-        <h1>cole chen ⋆⋆⋆</h1>
-        <p>
-          Cole Chen is a senior at Louisiana State University pursuing a BFA in Graphic Design and serves as president of the Graphic Design Student Association. From his experience as a first-generation Chinese American to his passion for R&B music, Chen approaches branding and interactive media through a lens of cultural nuance. his work is driven by design that feels intentional and deeply grounded in the human experience.
+        <!--
+          Replace the paragraph below with your own club description.
+          This is placeholder text so the page has real structure to preview.
+        -->
+        <p class="placeholder-copy">
+          [Club description placeholder — replace this paragraph with GDSA's own
+          about text: who the club is for, what meetings look like, and what
+          members get out of joining.]
         </p>
       </div>
-    </section>
-  </main>
 
-  <a class="linkedin-link" href="https://www.linkedin.com/in/colin-chen-911a48269/" target="_blank" rel="noopener">
-    <img src="img/LinkedIn Portfolio Site Icon.png" alt="linkedin">
-  </a>
+      <div class="btn-row">
+        <a class="btn" href="https://instagram.com/REPLACE_WITH_HANDLE" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-outline" href="https://linktr.ee/REPLACE_WITH_HANDLE" target="_blank" rel="noopener">Linktree</a>
+      </div>
+    </div>
+  </section>
 
-  <script src="js/script.js"></script>
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Meet the officers</h2>
+        <p>The four members who run GDSA day to day.</p>
+      </div>
+
+      <ul class="officer-grid" style="list-style:none; margin:0; padding:0;">
+
+        <li class="officer-card">
+          <div class="officer-photo bg-lavender">
+            <!-- Replace with: <img src="assets/officers/cole-chen.jpg" alt="Headshot of Cole Chen"> -->
+            <span aria-hidden="true">CC</span>
+          </div>
+          <h3>Cole Chen</h3>
+          <p class="officer-role">President</p>
+          <p class="officer-meta">Senior · Spokane, WA</p>
+          <p class="officer-email"><a href="mailto:">[email placeholder]</a></p>
+        </li>
+
+        <li class="officer-card">
+          <div class="officer-photo bg-pink">
+            <!-- Replace with: <img src="assets/officers/carmen-randolph-fajardo.jpg" alt="Headshot of Carmen Randolph Fajardo"> -->
+            <span aria-hidden="true">CR</span>
+          </div>
+          <h3>Carmen Randolph Fajardo</h3>
+          <p class="officer-role">Vice President</p>
+          <p class="officer-meta">Senior · Baton Rouge, LA</p>
+          <p class="officer-email"><a href="mailto:">[email placeholder]</a></p>
+        </li>
+
+        <li class="officer-card">
+          <div class="officer-photo bg-lime">
+            <!-- Replace with: <img src="assets/officers/gabriela-ham.jpg" alt="Headshot of Gabriela Ham"> -->
+            <span aria-hidden="true">GH</span>
+          </div>
+          <h3>Gabriela Ham</h3>
+          <p class="officer-role">Secretary</p>
+          <p class="officer-meta">Junior · Slidell, LA</p>
+          <p class="officer-email"><a href="mailto:">[email placeholder]</a></p>
+        </li>
+
+        <li class="officer-card">
+          <div class="officer-photo bg-blue" style="color: var(--pink);">
+            <!-- Replace with: <img src="assets/officers/alexis-champagne.jpg" alt="Headshot of Alexis Champagne"> -->
+            <span aria-hidden="true">AC</span>
+          </div>
+          <h3>Alexis Champagne</h3>
+          <p class="officer-role">Treasurer</p>
+          <p class="officer-meta">Junior · Lafayette, LA</p>
+          <p class="officer-email"><a href="mailto:">[email placeholder]</a></p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>GDSA · Louisiana State University</p>
+    <p>gdsa.lsu@gmail.com</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
