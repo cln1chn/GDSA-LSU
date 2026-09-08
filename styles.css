@@ -234,9 +234,13 @@ section {
 @media (max-width: 780px) {
   .nav-toggle { display: inline-block; }
 
-  .site-nav {
+    .site-nav {
     display: none;
-    width: 100%;
+    width: calc(100% + var(--sp-4) * 2);
+    margin-left: calc(-1 * var(--sp-4));
+    margin-right: calc(-1 * var(--sp-4));
+    margin-top: var(--sp-4);
+    margin-bottom: calc(-1 * var(--sp-4));
     border-top: var(--border-w) solid var(--ink);
   }
   .site-nav.is-open { display: block; }
@@ -249,9 +253,16 @@ section {
     padding: var(--sp-2) var(--sp-4);
     border: none;
     border-bottom: 1px solid #ddd;
+    border-radius: 0;
   }
   .site-nav a[aria-current="page"] { border-bottom: 1px solid var(--ink); }
-  .site-header .wrap { flex-wrap: wrap; }
+    .site-nav li:last-child a {
+    border-bottom: none;
+  }
+  .site-header .wrap {
+    flex-wrap: wrap;
+    padding-block: var(--sp-4);
+  }
 }
 
 /* -----------------------------------------------------------------
