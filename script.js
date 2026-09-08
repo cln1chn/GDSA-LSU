@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
      --------------------------------------------------------------- */
   var pastCompetitions = [
     {
-      month: 'Aug. 2026',
+      month: 'August 2026',
       title: 'Work In Progress',
       prompt: 'Future projects will go here!',
       deadline: 'Was Due: Never?',
