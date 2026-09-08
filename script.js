@@ -20,6 +20,28 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ---------------------------------------------------------------
+     Home — switch calendar to agenda view on small screens
+     --------------------------------------------------------------- */
+  var calendarFrame = document.getElementById('gdsa-calendar');
+  if (calendarFrame) {
+    var gridSrc = 'https://calendar.google.com/calendar/embed?src=gdsa.lsu%40gmail.com&ctz=America%2FChicago';
+    var agendaSrc = gridSrc + '&mode=AGENDA';
+    var mobileQuery = window.matchMedia('(max-width: 780px)');
+
+    function setCalendarView(isMobile) {
+      var targetSrc = isMobile ? agendaSrc : gridSrc;
+      if (calendarFrame.src !== targetSrc) {
+        calendarFrame.src = targetSrc;
+      }
+    }
+
+    setCalendarView(mobileQuery.matches);
+    mobileQuery.addEventListener('change', function (e) {
+      setCalendarView(e.matches);
+    });
+  }
+
+  /* ---------------------------------------------------------------
      Design Competition — past prompts carousel
      Add a new month by copying an object into this array. Newest
      first is not required; the arrows just step through the list.

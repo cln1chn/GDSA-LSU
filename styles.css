@@ -289,6 +289,10 @@ section {
   margin-inline: auto;
 }
 
+.hero .btn-accent {
+  margin-top: -1rem;
+}
+
 /* Checkerboard brand grid — echoes the club's palette board */
 .brand-grid {
   display: grid;
