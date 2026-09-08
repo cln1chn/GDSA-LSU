@@ -274,7 +274,7 @@ section {
 }
 
 .hero-badge {
-  width: min(420px, 55vw);
+  width: min(420px, 75vw);
   margin: 0 auto 0.1rem;
 }
 
@@ -371,13 +371,13 @@ section {
 }
 
 .btn-accent {
-  background: var(--blue);
-  color: var(--lime);
+  background: var(--lime);
+  color: var(--blue);
   border: none;
 }
 .btn-accent:hover {
-  background: var(--lime);
-  color: var(--blue);
+  background: var(--blue);
+  color: var(--lime);
 }
 
 .btn-outline {
