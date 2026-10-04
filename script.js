@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
      --------------------------------------------------------------- */
   var pastCompetitions = [
     {
-      month: 'August 2026',
-      title: 'Work In Progress',
-      prompt: 'Future projects will go here!',
-      deadline: 'Was Due: Never?',
+      month: 'September 2026',
+      title: 'Pixel Playground',
+      prompt: 'Arcade',
+      deadline: 'Due: 10/02/2026',
     }
     // {
     //   month: 'August 2026',

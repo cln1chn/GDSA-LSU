@@ -289,7 +289,7 @@ section {
   margin-inline: auto;
 }
 
-.hero .btn-accent {
+.hero .btn-row {
   margin-top: -1rem;
 }
 
@@ -375,11 +375,22 @@ section {
 }
 
 .btn-accent {
+  background: var(--blue);
+  color: var(--lime);
+  border: none;
+}
+.btn-accent:hover {
+  background: var(--lime);
+  color: var(--blue);
+}
+
+.btn-accent2 {
   background: var(--lime);
   color: var(--blue);
   border: none;
 }
-.btn-accent:hover {
+
+.btn-accent2:hover {
   background: var(--blue);
   color: var(--lime);
 }
