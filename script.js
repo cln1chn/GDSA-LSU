@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
       month: 'September 2026',
       title: 'Pixel Playground',
       prompt: 'Arcade',
-      deadline: 'Due: 10/02/2026',
+      deadline: 'Due: October 2 2026',
     }
     // {
     //   month: 'August 2026',
